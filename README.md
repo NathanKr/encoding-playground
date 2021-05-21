@@ -43,4 +43,5 @@ unicode is a standard for consistent encoding. unicode can be implemented by few
 <ul>
 <li>the encoding in html is set in the charset tag. the html 5 recommendation if utf8</li>
 <li>encoded string is represented in pythob by prefix b to string e.g b"\x68\x65\x6c\x6c\x6f\x20\x77\x6f\x72\x6c\x64" is ascii encoding of 'hello world'</li>
+<li>the type of the encoded string is class bytes</li>
 </ul>
