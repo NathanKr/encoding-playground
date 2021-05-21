@@ -20,7 +20,7 @@ unicode is a standard for consistent encoding. unicode can be implemented by few
 <ul>
 <li>given a string e.g. 'hello string' we can encode it i.e. get its mapping to numbers meaning list of bytes . but here we must specify which encoding method to use e.g. ascii , utf8 ...
 </li>
-<li>encoding 'hello world' using ascii encoding method will result in the following bytes list : 0x68 0x65 0x6c 0x6c 0x6f 0x20 0x77 0x6f 0x72 0x6c 0x64 . 0x is hex base representation. </li>
+<li>encoding 'hello world' using ascii encoding method will result in the following bytes  : b"\x68\x65\x6c\x6c\x6f\x20\x77\x6f\x72\x6c\x64" . \x is hex base representation and prefix b mark the string as the encoding to bytes </li>
 <li>encoding a string using ascii might not result in the same list of bytes as encoding a string to utf8. it will be the same for 'hello world' because the mapping in ascii and utf8 for these characters is the same. however, encode of 'שלום עולם' to ascii will fail</li>
 <li>check the file encode_string.py and encode_decode_string.py for examples</li>
 <li>encode a string using the function encode(encoding_method)</li>
